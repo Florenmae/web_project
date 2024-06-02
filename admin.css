@@ -1,0 +1,143 @@
+/*----------------------------ADD PRODUCTS-----------------*/
+.add-products{
+	background: #fff;
+	width: 60vw;
+	min-width: 80vh;
+	box-shadow: var(--box-shadow);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 2rem auto;
+	padding: 1rem 0;
+}
+
+.show-products,
+.message-container,
+.order-container,
+.form-container{
+	position: relative;
+	background: var();
+	margin-top: 3.5rem;
+}
+
+.show-products::before,
+.message-container::before,
+.order-container::before{
+	background-image: var();
+	top: -100px;
+}
+
+.show-products .box-container{
+	grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+}
+
+.box-container .box{
+	line-height: 2;
+}
+
+.box-container .box h4{
+	text-transform: capitalize;
+}
+.box-container .box img{
+	width: 100%;
+	margin-bottom: 1rem;
+}
+
+.update-container{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	overflow-y: auto;
+	
+	z-index: 1100;
+	padding: 2rem;
+	align-items: center;
+	justify-content: center;
+	display: none;
+	
+}
+
+.update-container form{
+	box-shadow: var(--box-shadow);
+	width: 50%;
+	background: #fff;
+	padding: 1rem;
+	margin: 2rem auto;
+	text-align: center;
+}
+
+.update-container .edit,
+.update-container .btn{
+	width: 40%;
+	cursor: pointer;
+}
+
+.update-container form img{
+	width: 60%;
+}
+
+
+.message-container .title,
+.order-container .title{
+	text-transform: uppercase;
+	padding: 3rem;
+}
+
+.order-container{
+	padding: 3% 7%;
+}
+
+.order-container .box-container{
+	grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.box-container .box{
+	text-align: left;
+	padding: 1rem 2rem;
+}
+
+.order-container .box p{
+	margin-bottom: .5rem;
+	text-transform: capitalize;
+	color: var(--green);
+}
+
+.order-container .box span{
+	color: #555;
+}
+
+.order-container form{
+	text-align: center;
+}
+
+.order-container form select{
+	width: 100%;
+	margin: 1rem auto;
+	padding: .5rem 0;
+	cursor: pointer;
+	border-radius: 3px;
+}
+
+.order-container form input{
+	width: 77%;
+	border: none;
+	background: var(--light-green);
+	color: #000;
+	text-transform: capitalize;
+}
+
+.order-container .box form input:hover,
+.order-container .box .delete:hover{
+	color: var(--green);
+	background: #000;
+}
+
+.order-container .box .delete{
+	padding: .7rem 4rem;
+}
+
